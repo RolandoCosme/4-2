@@ -2,30 +2,30 @@
 <html>
 <head>
   <title>To Do Class work</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/superhero/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/slate/bootstrap.css">
 </head>
   <h1>My ToDo List</h1>
 <body>
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="col-md-4">
-        <h3>Today</h3>
+        <h3>Stuff to do</h3>
         <form class="form-inline">
           <div class="form-group">
-            <input type="text" placeholder="item A">
-            <button class="btn-danger">Delete</button> 
+            <input type="text" placeholder="add things" id="add-item">
+            <button class="btn-danger" id="delete-btn">Delete</button> 
             <div class="checkbox">Done<input type="checkbox">
             </div>
           </div>
-        </form>s
+        </form>
       </div>
       <div class="col-md-4">
-        <h3>Tomorrow</h3>
+        <h3>Completed</h3>
         <form class="form-inline">
           <div class="form-group">
-            <input type="test" placeholder="item B">
-            <button class="btn-danger">Delete</button>
-            <div class="checkbox">Done<input type="checkbox">     
+            <input type="test" placeholder="completed" id="completed-Item">
+            <button class="btn-danger" id="delete-btn">Delete</button>
+            <div class="checkbox" id="check-box">Done<input type="checkbox">     
             </div>
           </div> 
         </form>
