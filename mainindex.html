@@ -8,32 +8,31 @@
 <body>
   <div class="container-fluid">
     <div class="row-fluid">
-      <div class="col-md-4">
+      <div class="col-md-8">
+        <div class="col-md-4 col-md-offset-3">
         <h3>Stuff to do</h3>
-        <form class="form-inline">
-          <div>
-            <input type="text" placeholder="add things" id="add-item">
-            <button class="btn-danger" id="delete-btn">Delete</button> 
-            <div class="checkbox">Done<input type="checkbox">
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-4">
-        <h3>Completed</h3>
-        <form class="form-inline">
-          <div>
-            <input type="text" placeholder="completed" id="completed-Item">
-            <button class="btn-danger" id="delete-btn">Delete</button>
-            <div class="checkbox" id="check-box">Done<input type="checkbox">     
-            </div>
-          </div> 
-        </form>
+        </div>
       </div>
     </div>
   </div>
+  <div class="col-md-4 col-md-offset-1">
+    <table id="myTable">
+      <tr>
+          <td>
+            <form>
+              <input id="newTask" type = "text" placeholder= "add new item" autocomplete="off">
+            </form>
+          </td>
+          <td>
+            <button class="btn-default" id="delete-btn">Add Items</button>
+            <button class="btn-success" id="done-btn">Completed</button> 
+            <button class="btn-danger" id="delete-btn">Delete</button>  
+          </td>
+      </tr>
+    </table>
+  </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/todo.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
