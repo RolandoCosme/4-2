@@ -11,12 +11,15 @@ $(document).ready(function(){
     // var newElement = $("<" + elementType + ">");
     var newTable = document.getElementById("myTable");
     var newTd = $("<td>").addClass("newStuff")
+    var newTr = $("<tr>").addClass("newStuff")
     var addItem = document.getElementById("add-btn");
     var completeItem = document.getElementById("completed-btn");
     var deleteBtn = document.getElementById("delete-btn");
     var newForm = document.getElementById("new-form");
     
-    $(".addBox").append(newForm).append(deleteBtn).append(completeItem);
+    
+    $(".myTable").append(newForm).append(addItem).append(completeItem).append(deleteBtn);
+    $(".addBox").append(newForm).append(completeItem).append(deleteBtn);
 
   //   var newRow = $("<tr>");    // ADD NEW TABLE ROW
   //   var taskTd = $("<td>").addClass("newStuff2").append(newTask);       // ADD NEW TABLE DATA WITH CLASSES TO HOLD NEW TASK
